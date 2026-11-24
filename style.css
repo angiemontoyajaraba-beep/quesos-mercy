@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Arial, Helvetica, sans‑serif;
+}
+
+body {
+    background-color: #FFF9EF;
+    color: #2D2D2D;
+}
+
+header {
+    background-color: #D4975B;
+    color: white;
+    padding: 22px;
+    text-align: center;
+    border-radius: 0 0 12px 12px;
+}
+
+nav {
+    background-color: #B8804A;
+    padding: 16px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 14px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #FFD77A;
+}
+
+.portada {
+    background-color: #FFEFD8;
+    padding: 70px 25px;
+    text-align: center;
+    border-radius: 16px;
+    margin: 25px 15px;
+}
+
+.portada h2 {
+    color: #704214;
+    margin-bottom: 22px;
+    font-size: 32px;
+}
+
+.frase {
+    font-size: 24px;
+    color: #8B5A2B;
+    margin: 28px 0;
+    font-weight: 500;
+}
+
+img {
+    max-width: 92%;
+    border-radius: 18px;
+    margin: 24px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+button {
+    background-color: #C8793F;
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(200, 121, 63, 0.35);
+}
+
+button:hover {
+    background-color: #B46A34;
+}
+
+section {
+    padding: 55px 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #704214;
+    margin-bottom: 18px;
+    font-size: 26px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.65;
+    max-width: 900px;
+    margin: 0 auto;
+}
+/* Sección Nosotros */
+.seccion-nosotros {
+    padding: 60px 20px;
+}
+.contenedor-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.img-nosotros {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 18px;
+}
+.texto-nosotros {
+    max-width: 550px;
+    text-align: left;
+}
+.texto-nosotros p {
+    margin-bottom: 15px;
+}
+
+/* Catálogo tarjetas */
+.seccion-productos {
+    padding: 60px 20px;
+}
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 30px auto 0;
+}
+.tarjeta {
+    background-color: #FFEFD8;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.img-tarjeta {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+.tarjeta h4 {
+    color: #704214;
+    font-size: 22px;
+    margin: 15px 0 10px;
+}
+.precio {
+    font-weight: bold;
+    color: #C8793F;
+    font-size: 20px;
+    margin: 10px 0 15px;
+}
+.boton-consultar {
+    background-color: #C8793F;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.boton-consultar:hover {
+    background-color: #B46A34;
+}
+.img-tarjeta {
+    height: auto;
+    min-height: 180px;
+}
+seccion-calculadora {
+    padding: 60px 20px;
+    background-color: #FFEFD8;
+    border-radius: 16px;
+    margin: 20px 15px;
+}
+
+.contenedor-calculadora {
+    max-width: 450px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.contenedor-calculadora label {
+    display: block;
+    color: #704214;
+    font-weight: 600;
+    margin: 18px 0 8px;
+}
+
+.contenedor-calculadora select,
+.contenedor-calculadora input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #D4975B;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.contenedor-calculadora button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.caja-resultado {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px dashed #D4975B;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #704214;
+}
+/* ===== SECCIÓN CONTACTO ===== */
+.seccion-contacto {
+    padding: 60px 20px;
+}
+
+.contenedor-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FFEFD8;
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.info-contacto p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.info-contacto a {
+    color: #C8793F;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.info-contacto a:hover {
+    text-decoration: underline;
+}
+
+.redes-sociales {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px dashed #D4975B;
+}
+
+.enlace-red {
+    display: inline-block;
+    margin: 10px 15px 0 0;
+    padding: 8px 16px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+.pie-pagina {
+    background-color: #704214;
+    color: white;
+    padding: 50px 20px 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contenedor-pie h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contenedor-pie > p {
+    color: #FFEFD8;
+    margin-bottom: 25px;
+}
+
+.enlaces-pie {
+    margin-bottom: 20px;
+}
+
+.enlaces-pie a {
+    color: #FFD77A;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.enlaces-pie a:hover {
+    text-decoration: underline;
+}
+
+.redes-pie {
+    margin-bottom: 20px;
+}
+
+.redes-pie a {
+    font-size: 24px;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.derechos {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 14px;
+    color: #ddd;
+}
+* 🔹 Eliminar espacios vacíos innecesarios */
+body {
+    line-height: 1.5;
+}
+
+/* 🔹 Efectos al pasar el cursor sobre tarjetas */
+.tarjeta {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* 🔹 Suavizar el desplazamiento entre secciones */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 🔹 Mejorar legibilidad de textos */
+body, p {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.3;
+}
+
+/* 🔹 Ajustes específicos para celulares */
+@media (max-width: 768px) {
+    nav a {
+        display: inline-block;
+        margin: 8px 10px;
+    }
+    
+    .contenedor-nosotros,
+    .tarjeta-promocion {
+        padding: 20px;
+    }
+    
+    .portada h2 {
+        font-size: 24px;
+    }
+    
+    .frase {
+        font-size: 18px;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    nav a {
+        font-size: 14px;
+        margin: 5px 8px;
+    }
+    
+    .contenedor-calculadora,
+    .contenedor-contacto,
+    .tarjeta-promocion {
+        padding: 20px 15px;
+    }
+    
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+/* ===== AJUSTE DE TODAS LAS IMÁGENES ===== */
+img {
+    max-width: 75% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 20px auto !important;
+}

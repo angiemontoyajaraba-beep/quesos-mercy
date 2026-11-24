@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quesos Mercy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🧀 Quesos Mercy</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#productos">Productos</a>
+        <a href="#promociones">Promociones</a>
+        <a href="#calculadora">Calculadora</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio" class="portada">
+        <h2>¡Bienvenidos a Quesos Mercy!</h2>
+        <p class="frase">🥛 Sabor tradicional, calidad en cada producto</p>
+        <img src="img/logo.jpeg" class="img-ajustada" alt="Logo Quesos Mercy">
+        <br>
+        <button onclick="location.href='#productos'">Conocer nuestros productos</button>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="seccion-nosotros">
+        <h3>👩 Nosotros</h3>
+        <div class="contenedor-nosotros">
+          <img src="img/quesosp (2).jpeg" alt="Foto del emprendimiento Quesos Mercy">  
+            <div class="texto-nosotros">
+                <p><strong>Quesos Mercy</strong> es un emprendimiento familiar dedicado a la elaboración y venta de productos lácteos y alimentos tradicionales colombianos.</p>
+                <p>Nuestra historia nace del amor por la cocina casera; nos diferenciamos porque usamos recetas tradicionales, ingredientes de calidad y mucho cariño en cada preparación.</p>
+                <p>Ofrecemos queso blando, queso duro, bollos, suero, yuca y angelito para que disfrutes el sabor de la tradición en tu hogar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO DE PRODUCTOS -->
+    <section id="productos" class="seccion-productos">
+        <h3>🧾 Catálogo de Productos</h3>
+        <div class="contenedor-tarjetas">
+            <!-- Tarjeta 1 - Queso Blando -->
+            <div class="tarjeta">
+                <img src="img/blando.jpeg" alt="Queso Blando" class="img-tarjeta">
+                <h4>Queso Blando</h4>
+                <p>Queso suave, fresco y tradicional, ideal para desayunar.</p>
+                <p class="precio">$14.000</p>
+                <button class="boton-consultar" onclick="location.href='#contacto'">Consultar</button>
+            </div>
+
+            <!-- Tarjeta 2 - Queso Duro -->
+            <div class="tarjeta">
+                <img src="img/duro.jpeg" alt="Queso Duro" class="img-tarjeta">
+                <h4>Queso Duro</h4>
+                <p>Queso firme, perfecto para rallar y acompañar tus comidas.</p>
+                <p class="precio">$15.000</p>
+                <button class="boton-consultar" onclick="location.href='#contacto'">Consultar</button>
+            </div>
+
+            <!-- Tarjeta 3 - Bollos -->
+            <div class="tarjeta">
+                <img src="img/bollos.jpeg" alt="Bollos" class="img-tarjeta">
+                <h4>Bollos</h4>
+                <p>Bollos de maíz recién preparados, sabor casero para el desayuno.</p>
+                <p class="precio">$3.000</p>
+                <button class="boton-consultar" onclick="location.href='#contacto'">Consultar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PROMOCIONES -->
+    <section id="promociones" class="seccion-promociones">
+        <h3>🔥 Promociones</h3>
+        <div class="tarjeta-promocion">
+            <img src="img/blando.jpeg" alt="Promoción Queso Blando" class="img-promocion">
+            <div class="texto-promocion">
+                <h4>¡Llevamos 3 y pagas 2!</h4>
+                <p>En queso blando: compra 3 unidades y te descontamos la de menor valor. ¡Ideal para compartir en familia!</p>
+                <span class="descuento">-20% en tu pedido</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CALCULADORA CON DESCUENTO -->
+    <section id="calculadora" class="seccion-calculadora">
+        <h3>🧮 Calculadora de precios</h3>
+        <div class="contenedor-calculadora">
+            <label for="producto">Producto:</label>
+            <select id="producto">
+                <option value="14000">Queso Blando - $14.000</option>
+                <option value="15000">Queso Duro - $15.000</option>
+                <option value="3000">Bollos - $3.000</option>
+                <option value="8000">Suero - $8.000</option>
+                <option value="5000">Yuca - $5.000</option>
+                <option value="3000">Angelito - $3.000</option>
+            </select>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" min="1" value="1">
+
+            <label for="descuento">Descuento (%):</label>
+            <input type="number" id="descuento" min="0" max="100" value="0">
+
+            <button onclick="calcularTotal()">Calcular Total</button>
+
+            <div id="resultado" class="caja-resultado">
+                El total aparecerá aquí
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="seccion-contacto">
+        <h3>📞 Contacto</h3>
+        <div class="contenedor-contacto">
+            <div class="info-contacto">
+                <p><strong>📱 WhatsApp:</strong> <a href="https://wa.me/573001234567" target="_blank">+57 300 123 4567</a></p>
+                <p><strong>📧 Correo:</strong> <a href="mailto:quesosmercy@gmail.com">quesosmercy@gmail.com</a></p>
+                <p><strong>📍 Ubicación:</strong> Barranquilla, Colombia</p>
+                
+                <div class="redes-sociales">
+                    <p><strong>Síguenos en nuestras redes:</strong></p>
+                    <a href="https://facebook.com" target="_blank" class="enlace-red">📘 Facebook</a>
+                    <a href="https://instagram.com" target="_blank" class="enlace-red">📷 Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-pagina">
+        <div class="contenedor-pie">
+            <h4>🧀 Quesos Mercy</h4>
+            <p>El sabor tradicional en cada producto</p>
+            
+            <div class="enlaces-pie">
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            
+            <div class="redes-pie">
+                <a href="https://facebook.com" target="_blank">📘</a>
+                <a href="https://instagram.com" target="_blank">📷</a>
+                <a href="https://wa.me/573001234567" target="_blank">📱</a>
+            </div>
+            
+            <p class="derechos">© 2026 Quesos Mercy. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+<script>
+function calcularTotal() {
+    var precio = parseFloat(document.getElementById('producto').value);
+    var cantidad = parseInt(document.getElementById('cantidad').value);
+    var descuento = parseFloat(document.getElementById('descuento').value) || 0;
+    
+    var subtotal = precio * cantidad;
+    var montoDescuento = subtotal * (descuento / 100);
+    var total = subtotal - montoDescuento;
+    
+    var mensaje = 'Subtotal: $' + subtotal.toLocaleString('es-CO');
+    
+    if (descuento > 0) {
+        mensaje += '<br>Descuento del ' + descuento + '%: -$' + montoDescuento.toLocaleString('es-CO');
+    }
+    
+    mensaje += '<br><strong>Total a pagar: $' + total.toLocaleString('es-CO') + '</strong>';
+    
+    document.getElementById('resultado').innerHTML = mensaje;
+}
+</script>
+</body>
+</html>
