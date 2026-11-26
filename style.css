@@ -390,7 +390,7 @@ h1, h2, h3, h4 {
 }
 /* ===== AJUSTE DE TODAS LAS IMÁGENES ===== */
 img {
-    max-width: 75% !important;
+    max-width: 50% !important;
     height: auto !important;
     display: block !important;
     margin: 20px auto !important;
